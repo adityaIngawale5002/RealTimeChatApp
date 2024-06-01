@@ -15,8 +15,7 @@ import mongoose, { Types } from "mongoose";
 export const newGroupChat=TryCatch(async(req,res,next)=>{
 
     const {name,members}=req.body;
-    // console.log("here in newGroupChat")
-    // console.log(name,members)
+   
     if(members.length<2){
         return next(new ErrorHandler("Groupchat must have atleast 2 members",400))
     }
@@ -67,9 +66,9 @@ export const getMyChat=TryCatch(async (req,res)=>{
 
 
 export const getMyGroups=TryCatch(async(req,res)=>{
-    // console.log("here in  get my group")
+    
     const chats=await Chat.find({members:req.user,groupChat:true,creator:req.user}).populate("members","name avatar")
-    //  console.log(chats)
+   
     const groups=chats.map(({members,_id,groupChat,name})=>({
         _id,
         groupChat,
@@ -129,7 +128,7 @@ export const addGroupMember=TryCatch(async(req,res)=>{
 })
 
 export const removeMember=TryCatch(async(req,res,next)=>{
-console.log("herhe in remove member")
+
     const {userId,chatId}=req.body;
     const [chat,userThatWillBeRemoved]=await Promise.all([
         Chat.findById(chatId),
@@ -227,11 +226,11 @@ export const sendAttachment=TryCatch(async(req,res)=>{
 })
 
 export const getChatDetils=TryCatch(async(req,res,next)=>{
-    // console.log("here in get chat details",req.params.id)
+
     if(req.query.populate==="true"){
     
         const chat=await Chat.findById((req.params.id).toString()).populate("members","name avatar").lean();
-        // console.log("chat",chat)
+
         if(!chat) return next(new ErrorHandler("chat not found",404));
         const members=chat.members.map(({_id,name,avatar})=>({_id,name,avatar:avatar.url}))
         return res.status(200).json({

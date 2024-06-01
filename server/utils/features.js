@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import {v4 as uuid} from "uuid";
 import {v2 as cloudiary}  from "cloudinary"
 // import { ErrorHandler } from "./utility";
-import { getBase64, getSockets } from "../lib/helper.js";
+import {  getSockets } from "../lib/helper.js";
 import { ErrorHandler } from "./utility.js";
 
 export const connectDB=()=>{
@@ -66,7 +66,7 @@ export const uploadFilesToCloudinary=async (files=[])=>{
         }))
         return formatedResult;
     } catch (error) {
-        //console.log(error)
+        
         throw new ErrorHandler("error uploading in cloudinary")
     }
 }

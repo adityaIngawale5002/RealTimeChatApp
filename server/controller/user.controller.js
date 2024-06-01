@@ -191,11 +191,11 @@ export const getMyfriends=TryCatch(async(req,res,next)=>{
           
           
      })
-    console.log(friends)
+  
      if(chatId){
           const chat=await Chat.findById(chatId);
           const availableFriends=friends.filter((friend)=>!chat.members.includes(friend._id));
-          console.log(friends)
+       
           return res.status(200).json({
                success:true,
                friends:availableFriends

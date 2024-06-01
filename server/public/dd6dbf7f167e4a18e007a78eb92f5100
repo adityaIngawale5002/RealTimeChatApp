@@ -1,0 +1,238 @@
+//all about arrays
+#include <stdio.h>
+
+int main()
+{    //to declare an array an to print it
+    int arrey[]={3,4,3,4,3,4,5,34,2,4};
+    for(int i=0;i<10;i++)
+    {
+      printf("%d\t",arrey[i]);
+      
+    }
+/takinrg input from user for arrays
+    printf("\n");
+    int aditya[10];
+    printf("entre the array element:\n");
+    for(int i=0;i<10;i++)
+    {
+         scanf("%d",&aditya[i]);
+    }
+    //to print th arrays
+    for(int i=0;i<10;i++)
+    {
+         printf("%d\t",aditya[i]);
+    }
+//sum of array elements
+     int ads[5];
+     printf("entre the array element:\n");
+     for(int i=0;i<5;i++)
+     {
+          scanf("%d",&ads[i]);
+     }
+     //to find sum all array elemant
+     int sum=0;
+     for(int i=0;i<5;i++)
+     {
+          sum=sum+ads[i];
+     }
+     printf("the sum of array elemts is:%d",sum);
+//to find sum and average
+int marks[5],sum=0;
+float average;
+printf("entre marks:\n");
+for(int i=0;i<5;i++)
+{
+     scanf("%d",&marks[i]);
+}
+printf("the marks of the student are:\n");
+for(int i=0;i<5;i++)
+{
+     printf("%d\t",marks[i]);
+     
+}
+printf("\n");
+//to find sum
+for(int i=0;i<5;i++)
+{
+     sum=sum+marks[i];
+}
+printf("the sum of marks are:%d\n",sum);
+average=sum/5;
+printf("the average of marks r:%f",average);
+
+
+//progremme to add two arrays
+   int a[5], b[5], c[5];
+   printf("entre the first array element:\n");
+   for(int i=0;i<5;i++)
+   {
+        scanf("%d",&a[i]);
+   }
+   printf("entre the second array element:\n");
+    for(int i=0;i<5;i++)
+   {
+        scanf("%d",&b[i]);
+   }
+    for(int i=0;i<5;i++)
+    {
+         c[i]=a[i]+b[i];
+         printf("\nthird array element at index %d is:%d ",i,c[i]);
+
+    }
+
+
+
+
+// progremme to take input from user for 2d array and to print it
+int a[3][3];
+printf("entre the array element:\n");
+for(int i=0;i<3;i++)
+{
+     for(int j=0;j<3;j++)
+     {
+          scanf("%d",&a[i][j]);
+          
+     }
+}
+printf("the 2d array is \n");
+for(int i=0;i<3;i++)
+{
+     for(int j=0;j<3;j++)
+     {
+         printf("%d \t",a[i][j]);
+          
+     }
+     printf("\n");
+
+
+
+
+//to print transpose of matrixx
+int a[3][2];
+printf("entre the array element:\n");
+for(int i=0;i<3;i++)
+{
+     for(int j=0;j<2;j++)
+     {
+          scanf("%d",&a[i][j]);
+          
+     }
+}
+
+
+printf("the matrix is :\n");
+for(int i=0;i<3;i++)
+{
+     for(int j=0;j<2;j++)
+     {
+          printf("%d \t",a[i][j]);
+          
+     }
+     printf("\n");
+}
+printf("the transpose of given matrixx is:\n");
+for(int i=0;i<2;i++)
+{
+     for(int j=0;j<3;j++)
+     {
+          printf("%d \t",a[j][i]);
+     }
+     printf("\n");
+}
+
+
+
+
+ //to print transpose of matrixx
+int a[3][2];
+printf("entre the array element:\n");
+for(int i=0;i<3;i++)
+{
+     for(int j=0;j<2;j++)
+     {
+          scanf("%d",&a[i][j]);
+          
+     }
+}
+
+
+printf("the matrix is :\n");
+for(int i=0;i<3;i++)
+{
+     for(int j=0;j<2;j++)
+     {
+          printf("%d \t",a[i][j]);
+          
+     }
+     printf("\n");
+}
+// to print sum of rows and columns
+printf("the sum of rows and columns are:\n");
+int sum_rows,sum_col;
+for(int i=0;i<3;i++)
+{
+     sum_rows=sum_col=0;
+     for(int j=0;j<2;j++)
+     {
+          sum_rows=sum_rows+a[i][j];
+          sum_col=sum_col+a[j][i];
+          
+     }
+     printf("\n sum_rows=%d, sum_col=%d",sum_rows,sum_col);
+     
+}
+
+
+
+
+
+//progremme for addition of two matrixx
+    int a[3][3],b [3][3],c [3][3];
+    printf ("entre the first array element:\n");
+    for(int i=0;i<3;i++)
+    {
+         for(int j=0;j<3;j++)
+         {
+              scanf("%d",&a[i][j]);
+         }
+    }
+    printf("entre the second array element;\n");
+    for(int i=0;i<3;i++)
+    {
+         for(int j=0;j<3;j++)
+         {
+              scanf("%d",&b[i][j]);
+         }
+    }
+    printf("the first mstrixx is:\n");
+    for(int i=0;i<3;i++)
+    {
+         for(int j=0;j<3;j++)
+         {
+              printf("%d \t",a[i][j]);
+         }
+         printf("\n");
+         
+    }
+    printf("the second matrixx is:\n");
+    for(int i=0;i<3;i++)
+    {
+         for(int j=0;j<3;j++)
+         {
+              printf("%d \t",b[i][j]);
+         }
+         printf("\n");
+         
+    }
+    //to add this matrixx
+    printf("sum of this matrices is:\n");
+    for(int i=0;i<3;i++)
+    {
+         for(int j=0;j<3;j++)
+         {
+              c[i][j]=a[i][j]+b[i][j];
+              printf("%d \t",c[i][j]);
+              
+         }
+         printf("\n");
+    }

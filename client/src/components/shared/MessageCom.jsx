@@ -9,7 +9,7 @@ import RenderAttachment from './RenderAttachment';
 const MessageCom = ({message,user}) => {
     const {sender,content,attachments=[],createdAt}=message;
     const sameSender=sender?._id===user?._id
-    // console.log(user)
+   
 
     const timeAgo=moment(createdAt).fromNow()
   return (

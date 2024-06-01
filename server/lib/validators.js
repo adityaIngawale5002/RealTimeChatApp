@@ -5,14 +5,14 @@ export const validateHandler=(req,res,next)=>{
     const errors= validationResult(req);
     const errorMessage=errors.array().map((error)=>error.msg).join(",");
     
-    console.log("errors from validate handler",errors)
+    
     if(errors.isEmpty()){
-        console.log("here in if block of validator")
+        
         next(); 
 
     } 
     else{
-        console.log("here in else block of validator")
+       
         next(new ErrorHandler(errorMessage,400))
     };
  }

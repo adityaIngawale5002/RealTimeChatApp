@@ -1,8 +1,7 @@
 
 
 export const errorMiddleware=(err,req,res,next)=>{
-    console.log("here in error handler middleware")
-    console.log(err.message,"and",err.statusCode)
+ 
     err.message ||= "Internal server error";
     err.statusCode ||= 500;
 
