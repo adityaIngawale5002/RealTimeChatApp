@@ -1,4 +1,32 @@
 # Real Time Chat App
+
+## Project View
+- **Login Page**:
+   ![Login Page](https://github.com/adityaIngawale5002/RealTimeChatApp/blob/main/Images/Loginpage.png)
+
+- **Register Page**:
+   ![Register Page](https://github.com/adityaIngawale5002/RealTimeChatApp/blob/main/Images/registerpage.png)
+
+- **Main Chat Window**:
+   ![Chat Window](https://github.com/adityaIngawale5002/RealTimeChatApp/blob/main/Images/MainChatSection.png)
+
+- **Navbar**:
+   ![Navbar](https://github.com/adityaIngawale5002/RealTimeChatApp/blob/main/Images/navbar.png)
+
+- **Notification Section**:
+   ![Notification](https://github.com/adityaIngawale5002/RealTimeChatApp/blob/main/Images/notification.png)
+
+- **Create Group**:
+   ![Create Group](https://github.com/adityaIngawale5002/RealTimeChatApp/blob/main/Images/createGroup.png)
+
+- **Add Group Member**:
+   ![Add Group Member](https://github.com/adityaIngawale5002/RealTimeChatApp/blob/main/Images/AddGroupmember.png)
+
+- **Manage Group Page**:
+   ![Manage Group Section](https://github.com/adityaIngawale5002/RealTimeChatApp/blob/main/Images/manageGroup.png)
+
+## And many more such ui components
+
 ## Project Description
 
 - **User Registration**:
@@ -169,4 +197,13 @@
     ```
     npm run dev
     ```
+
+
+
+
+
+
+
+
+https://github.com/adityaIngawale5002/RealTimeChatApp/blob/main/Images/AddGroupmember.png
 
